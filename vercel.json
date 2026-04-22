@@ -1,15 +1,5 @@
 {
     "buildCommand": "cd frontend && npm install && npm run build",
     "installCommand": "cd frontend && npm install",
-    "experimentalServices": {
-        "frontend": {
-            "entrypoint": "frontend",
-            "routePrefix": "/",
-            "framework": "create-react-app"
-        },
-        "backend": {
-            "entrypoint": "backend",
-            "routePrefix": "/api"
-        }
-    }
+    "outputDirectory": "frontend/build"
 }
