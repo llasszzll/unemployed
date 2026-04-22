@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import ApplicationModal from './ApplicationModal';
 import Loading from './Loading';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 
 export default function Dashboard() {
   const [applications, setApplications] = useState([]);

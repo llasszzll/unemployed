@@ -1,4 +1,6 @@
 {
+    "buildCommand": "cd frontend && npm install && npm run build",
+    "installCommand": "cd frontend && npm install",
     "experimentalServices": {
         "frontend": {
             "entrypoint": "frontend",
@@ -7,7 +9,9 @@
         },
         "backend": {
             "entrypoint": "backend",
-            "routePrefix": "/_/backend"
+            "routePrefix": "/_/backend",
+            "buildCommand": "cd backend && npm install",
+            "startCommand": "cd backend && npm start"
         }
     }
 }
